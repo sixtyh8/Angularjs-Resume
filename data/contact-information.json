@@ -1,0 +1,16 @@
+[
+	 {
+		"firstName" : "Guillaume",
+		"lastName" : "Charbonneau",
+		"email" : "charbonneauster@gmail.com",
+		"address" : {
+			"street" : "1400 de Rougemont",
+			"city" : "Chambly",
+			"province" : "Quebec",
+			"postalCode" : "J3L2L8",
+			"country" : "Canada"
+		},
+		"telephone" : "(514) 995-8271",
+		"spokenLanguages" : "French, English"
+	}
+]

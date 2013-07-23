@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Training",
+		"courses" : [
+			{ "name" : "HTML5/CSS3 Training", "location" : "Confoo", "time" : "2012" },
+			{ "name" : "jQuery training", "location" : "Technologia", "time" : "2010" },
+			{ "name" : "Scrum with practice", "location" : "Pyxis", "time" : "2009" }
+		]
+	},
+	{
+		"title" : "School",
+		"courses" : [
+			{
+				"name" : "Technical Degree (AEC) in Multimedia Programming",
+				"location" : "Institut Descartes",
+				"time" : "2000"
+			}
+		]
+	}
+]

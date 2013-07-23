@@ -1,0 +1,23 @@
+[
+		
+	{
+		"title" : "Know",
+		"items" : [
+			{"name" : "Ruby on Rails, PHP and Node.js backend programming."},
+			{"name" : "Knowledge of multiple OSes (Mac, Windows and Linux)."},
+			{"name" : "AngularJS, jQuery, jQueryUI, Twitter Bootstrap."},
+			{"name" : "Comfortable working in command line (SSH, Terminal, etc...)."},
+			{"name" : "Good knowledge of Adobe software suite (Photoshop, Illustrator, Premiere, Flash, etc...)."}
+		]
+	},
+	{
+		"title" : "Like",
+		"items" : [
+			{"name" : "Gaming"},
+			{"name" : "Drumming"},
+			{"name" : "Reading"},
+			{"name" : "Learning"},
+			{"name" : "Cooking"}
+		]
+	}
+]
