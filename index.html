@@ -30,9 +30,9 @@
 				<div class="span12">
 					<div class="hero-unit">
 						<h1>Hello.</h1>
-						<img src="img/me.jpg" height="150" width="150" class="img-circle" alt="Me" />
+						<img src="img/me.jpg" data-alternate-image="img/me2.jpg" height="150" width="150" class="img-circle" alt="Me" />
 				        <p class="lead">Welcome to {{ contact.firstName + " " + contact.lastName }}'s resume. That's me! </p>
-				        <p>I've been doing web stuff for the past 13 years and I'm constantly looking to learn and improve. If you're interested in what we could accomplish by working together, please don't hesitate to <a href="#" class="btn btn-primary btn-small" id="contact-trigger">Contact me</a></p>
+				        <p>I've been doing web stuff for the past 13 years and I'm constantly looking to learn and improve. If you're interested in what we could accomplish by working together, please don't hesitate to <a href="#" class="btn btn-primary" id="contact-trigger"><i class="icon-user icon-white"></i> Contact me</a></p>
 				        
 				        <!-- Contact Information -->
 				        <section id="contact" class="row-fluid">
@@ -65,7 +65,7 @@
 			        <section id="experience" class="shadow">
 			        	<h2>Experience</h2>
 			        	<div class="row-fluid">
-					        <article ng-repeat="job in jobs" class="span4">
+					        <article ng-repeat="job in jobs" class="span6">
 					        	<h3>
 					        		{{ job.jobTitle }} <br /> 
 					        		<span class="company muted">{{ job.company }}</span> 
@@ -78,10 +78,9 @@
 							    </ul>
 					        </article>
 			        	</div>
-			        	<div class="row-fluid more-row" ng-show="lastJobs.length > 0">
-			        		<div class="more-content">
-			        			<article ng-repeat="job in lastJobs" class="span4">
-			        			<h3>
+			        	<div class="row-fluid">
+					        <article ng-repeat="job in lastJobs" class="span6">
+					        	<h3>
 					        		{{ job.jobTitle }} <br /> 
 					        		<span class="company muted">{{ job.company }}</span> 
 					        		<span class="time label">{{ job.time }}</span>
@@ -91,11 +90,7 @@
 								        {{ task.snippet }}
 							        </li>
 							    </ul>
-			        			</article>
-			        		</div>
-			        		<div class="more-link-container">
-			        			<a href="#" class="more-trigger btn">More</a>
-			        		</div>
+					        </article>
 			        	</div>
 			        </section>
 			        
@@ -103,7 +98,7 @@
 			        <section id="education" class="shadow">
 			        	<h2>Education</h2>
 			        	<div class="row-fluid">
-				        	<article ng-repeat="ed in education" class="span4">
+				        	<article ng-repeat="ed in education" class="span6">
 				        		<h3>{{ ed.title }}</h3>
 				        		<ul ng-show="ed.courses.length > 0">
 				        			<li ng-repeat="course in ed.courses">
@@ -120,7 +115,7 @@
 			        <section id="other" class="shadow">
 			        	<h2>Other</h2>
 			        	<div class="row-fluid">
-							<article ng-repeat="cat in other" class="span4">
+							<article ng-repeat="cat in other" class="span6">
 							<h3>{{ cat.title }}</h3>
 							<ul ng-show="cat.items.length > 0">
 								<li ng-repeat="item in cat.items">

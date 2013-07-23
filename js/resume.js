@@ -1,4 +1,10 @@
 $(function(){
+
+	$('div.hero-unit img.img-circle').hover(function(){
+		var newSrc = $(this).data('alternate-image'),
+			oldSrc = $(this).attr('src');
+		$(this).attr('src', newSrc).data('alternate-image', oldSrc);
+	});
 	
 	$('a#contact-trigger').on('click', function(e){
 		e.preventDefault();

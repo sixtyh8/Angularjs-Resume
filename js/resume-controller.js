@@ -9,8 +9,8 @@ function ResumeController($scope, $http){
 	
 	$http.get('data/jobs.json').success(function(data) {
 		
-    	$scope.jobs = data.slice(0, 3);
-    	$scope.lastJobs = data.slice(3, data.length);
+    	$scope.jobs = data.slice(0, 2);
+    	$scope.lastJobs = data.slice(2, 4);
 
 	});
 	
