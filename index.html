@@ -62,7 +62,7 @@
 					<!-- Contact -->
 					
 			        <!-- Work Experience -->
-			        <section id="experience" class="shadow">
+			        <section id="experience" class="condensed">
 			        	<h2>Experience</h2>
 			        	<div class="row-fluid">
 					        <article ng-repeat="job in jobs" class="span6">
@@ -78,24 +78,10 @@
 							    </ul>
 					        </article>
 			        	</div>
-			        	<div class="row-fluid">
-					        <article ng-repeat="job in lastJobs" class="span6">
-					        	<h3>
-					        		{{ job.jobTitle }} <br /> 
-					        		<span class="company muted">{{ job.company }}</span> 
-					        		<span class="time label">{{ job.time }}</span>
-					        	</h3>
-						        <ul ng-show="job.tasks.length > 0">
-							        <li ng-repeat="task in job.tasks">
-								        {{ task.snippet }}
-							        </li>
-							    </ul>
-					        </article>
-			        	</div>
 			        </section>
 			        
 			        <!-- Education -->
-			        <section id="education" class="shadow">
+			        <section id="education" class="condensed">
 			        	<h2>Education</h2>
 			        	<div class="row-fluid">
 				        	<article ng-repeat="ed in education" class="span6">
@@ -112,7 +98,7 @@
 			        </section>
 			        
 			        <!-- Other -->
-			        <section id="other" class="shadow">
+			        <section id="other" class="condensed">
 			        	<h2>Other</h2>
 			        	<div class="row-fluid">
 							<article ng-repeat="cat in other" class="span6">

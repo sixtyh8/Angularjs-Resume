@@ -64,36 +64,14 @@ section#contact ul li{
 div.more-row{
 	text-align: center;
 }
-/*
-.shadow{
+
+/* Condensed version */
+section#experience.condensed article.span6{
+	margin:0 0 20px 0;
+	padding:0;
 	clear:both;
-	position:relative;
-	background: #fff;
-	margin-bottom:20px;
-	padding-bottom:20px;
+	float:none;
 }
-.shadow:after{
-    content:"";
-    position:absolute;
-    z-index:-1;
-    box-shadow:0 0 30px rgba(0,0,0,0.3);
-    bottom:0px;
-    left:10%;
-    right:10%;
-    width:80%;
-    height:50%;
-    -moz-border-radius:100%;
-    border-radius:100%;
-}
-*/
-div.more-link-container{
-	padding-top:15px;
-	clear:both;
-}
-a.more-trigger{
-	margin:0 auto;
-}
-div.more-content{
+section#experience.condensed article ul{
 	display:none;
-	text-align: left;
 }
