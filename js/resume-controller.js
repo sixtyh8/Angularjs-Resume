@@ -8,9 +8,7 @@ angular.module('resumeApp', []).
 function ResumeController($scope, $http){
 	
 	$http.get('data/jobs.json').success(function(data) {
-		
     	$scope.jobs = data;
-
 	});
 	
 	$http.get('data/contact-information.json').success(function(data){
@@ -23,6 +21,10 @@ function ResumeController($scope, $http){
 	
 	$http.get('data/other.json').success(function(data){
 		$scope.other = data;
+	});
+	
+	$http.get('data/weapons.json').success(function(data){
+		$scope.weapons = data;
 	});
 
 };
