@@ -11,108 +11,115 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/magic-bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css"
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/resume.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>       
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         <script src="js/resume-controller.js"></script>
 
     </head>
     <body ng-controller="ResumeController">
+    	<div id="container">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid">
-	        <div class="row-fluid">
-				<div class="span12">
-					<div class="hero-unit">
-						<h1>Hello.</h1>
-						<img src="img/me.jpg" data-alternate-image="img/me2.jpg" height="150" width="150" class="img-circle" alt="Me" />
-				        <p class="lead">Welcome to {{ contact.firstName + " " + contact.lastName }}'s resume. That's me! </p>
-				        <p>I've been doing web stuff for the past 13 years and I'm constantly looking to learn and improve. If you're interested in what we could accomplish by working together, please don't hesitate to <a href="#" class="btn btn-primary" id="contact-trigger"><i class="icon-user icon-white"></i> Contact me</a></p>
-				        
-				        <!-- Contact Information -->
-				        <section id="contact" class="row-fluid">
-							<div class="span12">
-								<article class="span4">
-									<h3>Address</h3>									
-									{{ contact.address.street }}, {{ contact.address.city }}<br />
-									{{ contact.address.province }}, {{ contact.address.country }}<br /> 
-									{{ contact.address.postalCode }}
-								</article>
-								<article class="span4"> 
-									<h3>Email</h3>
-									<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-								</article>
-								<article class="span4">
-									<h3>Languages</h3>
-									<ul class="unstyled">
-										<li>Spoken: French, English</li>
-										<li>Written: French, English</li>
-									</ul>
-								</article>
-							</div>
-						</section>
-
-					</div>
-					
-					<!-- Contact -->
-					
-			        <!-- Work Experience -->
-			        <section id="experience" class="condensed">
-			        	<h2>Experience</h2>
-			        	<div class="row-fluid">
-					        <article ng-repeat="job in jobs" class="span6">
-					        	<h3>
-					        		{{ job.jobTitle }} <br /> 
-					        		<span class="company muted">{{ job.company }}</span> 
-					        		<span class="time label">{{ job.time }}</span>
-					        	</h3>
-						        <ul ng-show="job.tasks.length > 0">
-							        <li ng-repeat="task in job.tasks">
-								        {{ task.snippet }}
-							        </li>
-							    </ul>
-					        </article>
-			        	</div>
-			        </section>
-			        
-			        <!-- Education -->
-			        <section id="education" class="condensed">
-			        	<h2>Education</h2>
-			        	<div class="row-fluid">
-				        	<article ng-repeat="ed in education" class="span6">
-				        		<h3>{{ ed.title }}</h3>
-				        		<ul ng-show="ed.courses.length > 0">
-				        			<li ng-repeat="course in ed.courses">
-				        				{{ course.name }}
-				        				<span ng-show="course.location"> - {{ course.location }}</span>
-				        				<span ng-show="course.time" class="label pull-right">{{ course.time }}</span>
-				        			</li>
-				        		</ul>
-				        	</article>
-			        	</div>
-			        </section>
-			        
-			        <!-- Other -->
-			        <section id="other" class="condensed">
-			        	<h2>Other</h2>
-			        	<div class="row-fluid">
-							<article ng-repeat="cat in other" class="span6">
-							<h3>{{ cat.title }}</h3>
-							<ul ng-show="cat.items.length > 0">
-								<li ng-repeat="item in cat.items">
-									{{ item.name }}
-								</li>
-							</ul>
-			        </section>
-			        
-				</div>
-	        </div>
-        </div>
+        
+		<section id="introduction">
+			<h1>Hello.</h1>
+			<img src="img/me.jpg" data-alternate-image="img/me2.jpg" height="150" width="150" class="me" alt="Me" />
+	        <p>Welcome to {{ contact.firstName + " " + contact.lastName }}'s resume. That's me! </p>
+	        <p>I've been doing web stuff for the past 13 years and I'm constantly looking to learn and improve. If you're interested in what we could accomplish by working together, please don't hesitate to <a href="#" class="btn btn-primary" id="contact-trigger"><i class="icon-user icon-white"></i> Contact me</a></p>
+		</section>
+		
+        <!-- Contact Information -->
+        <section id="contact">
+			<article>
+				<h3>Address</h3>
+				{{ contact.address.street }}, {{ contact.address.city }}<br />
+				{{ contact.address.province }}, {{ contact.address.country }}<br />
+				{{ contact.address.postalCode }}
+			</article>
+			<article>
+				<h3>Email</h3>
+				<a ng-href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+			</article>
+			<article>
+				<h3>Languages</h3>
+				<ul>
+					<li>Spoken: French, English</li>
+					<li>Written: French, English</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Social</h3>
+				<ul>
+					<li ng-repeat="s in social">
+						<a ng-href="{{ s.url }}">{{ s.service }}</a>
+					</li>
+				</ul>
+			</article>
+		</section>
+		
+		<!-- Weapons of Choice -->
+        <section id="weapons">
+        	<h2>Weapons of Choice</h2>
+        	<article ng-repeat="cat in weapons">
+        		<h3>{{ cat.category }}</h3>
+        		<div ng-repeat="w in cat.weapons">
+        		{{ w.title }} - {{ w.years }} years - {{ w.level }}
+        		</div>
+        	</article>
+        </section>
+		
+        <!-- Work Experience -->
+        <section id="experience">
+        	<h2>Work Experience</h2>
+	        <article ng-repeat="job in jobs">
+	        	<h3>
+	        		{{ job.jobTitle }} <br /> 
+	        		<span class="company muted">{{ job.company }}</span> 
+	        		<span class="time label">{{ job.time }}</span>
+	        	</h3>
+		        <ul ng-show="job.tasks.length > 0">
+			        <li ng-repeat="task in job.tasks">
+				        {{ task.snippet }}
+			        </li>
+			    </ul>
+	        </article>
+        </section>
+        
+        <!-- Education -->
+        <section id="education">
+        	<h2>Education</h2>
+        	<article ng-repeat="ed in education">
+        		<h3>{{ ed.title }}</h3>
+        		<ul ng-show="ed.courses.length > 0">
+        			<li ng-repeat="course in ed.courses">
+        				{{ course.name }}
+        				<span ng-show="course.location"> - {{ course.location }}</span>
+        				<span ng-show="course.time" class="label pull-right">{{ course.time }}</span>
+        			</li>
+        		</ul>
+        	</article>
+        </section>
+        
+        <!-- Other -->
+        <section id="other">
+        	<h2>Other</h2>
+			<article ng-repeat="cat in other">
+				<h3>{{ cat.title }}</h3>
+				<ul ng-show="cat.items.length > 0">
+					<li ng-repeat="item in cat.items">
+						{{ item.name }}
+					</li>
+				</ul>
+			</article>
+        </section>
+    	
+    	</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

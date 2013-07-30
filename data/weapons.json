@@ -1,0 +1,134 @@
+[
+	{
+		"category" : "Front-End",
+		"weapons" : [
+			{
+				"title" : "HTML5",
+				"years" : "3",
+				"level" : "Expert"
+			},
+			{
+				"title" : "CSS3",
+				"years" : "3",
+				"level" : "Intermediate/Expert"
+			},
+			{
+				"title" : "jQuery",
+				"years" : "7",
+				"level" : "Expert"
+			},
+			{
+				"title" : "jQuery UI",
+				"years" : "4",
+				"level" : "Intermediate/Expert"
+			},
+			{
+				"title" : "Angular.js",
+				"years" : "1",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "SASS",
+				"years" : "1",
+				"level" : "Intermediate/Expert"
+			},
+			{
+				"title" : "Twitter Bootstrap",
+				"years" : "1",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "Modernizr",
+				"years" : "5",
+				"level" : "Intermediate/Expert"
+			}
+
+		] 
+	},
+	{
+		"category" : "Back-End",
+		"weapons" : [
+			{
+				"title" : "PHP",
+				"years" : "7",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "Ruby on Rails",
+				"years" : "5",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "Node.js",
+				"years" : "1",
+				"level" : "Beginner/Intermediate"
+			}
+		]
+	},
+	{
+		"category" : "Source Control",
+		"weapons" : [
+			{
+				"title" : "Git",
+				"years" : "1",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "SVN",
+				"years" : "3",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "Perforce",
+				"years" : "2",
+				"level" : "Intermediate"
+			}
+		]
+	},
+	{
+		"category" : "Design",
+		"weapons" : [
+			{
+				"title" : "Photoshop",
+				"years" : "10",
+				"level" : "Intermediate"
+			},
+			{
+				"title" : "Illustrator",
+				"years" : "7",
+				"level" : "Intermediate"
+			}
+		]
+	},
+	{
+		"category" : "Operating System",
+		"weapons" : [
+			{
+				"title" : "Mac OSX",
+				"years" : "5",
+				"level" : "Expert"
+			},
+			{
+				"title" : "Windows",
+				"years" : "15",
+				"level" : "Expert (sadly)"
+			},
+			{
+				"title" : "Linux (Red Hat, Ubuntu)",
+				"years" : "3",
+				"level" : "Intermediate"
+			}
+		]
+	},
+	{
+		"category" : "Other",
+		"weapons" : [
+			{
+				"title" : "Objective-C",
+				"years" : "1",
+				"level" : "Beginner"
+			}
+		]
+	}
+	
+]
