@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/resume.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>       
@@ -34,7 +35,10 @@
 		</section>
 		
         <!-- Contact Information -->
-        <section id="contact">
+        <section id="contact" class="panel">
+        	<div class="panel-heading">
+        		Contact Information
+        	</div>
 			<article>
 				<h3>Address</h3>
 				{{ contact.address.street }}, {{ contact.address.city }}<br />
@@ -54,9 +58,9 @@
 			</article>
 			<article>
 				<h3>Social</h3>
-				<ul>
+				<ul class="list-unstyled">
 					<li ng-repeat="s in social">
-						<a ng-href="{{ s.url }}">{{ s.service }}</a>
+						<a ng-href="{{ s.url }}"><i class="{{ s.class }} icon-large"></i> {{ s.service }}</a>
 					</li>
 				</ul>
 			</article>
@@ -69,8 +73,11 @@
         	</div>
         	<article ng-repeat="cat in weapons">
         		<h3>{{ cat.category }}</h3>
-        		<div ng-repeat="w in cat.weapons">
-        		{{ w.title }} - {{ w.years }} years - {{ w.level }}
+        		<div ng-repeat="w in cat.weapons | orderBy:'-years' | orderBy:'-levelNum'">
+        		{{ w.title }} - <span class="text-muted">{{ w.years }} years</span> 
+        		<div class="progress">
+        			<div class="progress-bar {{ w.class }}">{{ w.level }}</div>
+        		</div>
         		</div>
         	</article>
         </section>
@@ -83,7 +90,7 @@
 	        <article ng-repeat="job in jobs">
 	        	<h3>
 	        		{{ job.jobTitle }} <br /> 
-	        		<span class="company muted">{{ job.company }}</span> 
+	        		<span class="company text-muted">{{ job.company }}</span> 
 	        		<span class="time label">{{ job.time }}</span>
 	        	</h3>
 		        <ul ng-show="job.tasks.length > 0">

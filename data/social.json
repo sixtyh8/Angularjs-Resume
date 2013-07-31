@@ -1,14 +1,22 @@
 [
 	{
 		"service" : "Twitter",
-		"url" : "https://twitter.com/sixtyh8"
+		"url" : "https://twitter.com/sixtyh8",
+		"class" : "icon-twitter"
 	},
 	{
 		"service" : "LinkedIn",
-		"url" : "http://ca.linkedin.com/pub/guillaume-charbonneau/2/a62/972/"
+		"url" : "http://ca.linkedin.com/pub/guillaume-charbonneau/2/a62/972/",
+		"class" : "icon-linkedin"
 	},
 	{
 		"service" : "Facebook",
-		"url" : "https://www.facebook.com/guillaume.charbonneau"
+		"url" : "https://www.facebook.com/guillaume.charbonneau",
+		"class" : "icon-facebook"
+	},
+	{
+		"service" : "Google+",
+		"url" : "https://plus.google.com/108582028294311365014",
+		"class" : "icon-google-plus"
 	}
 ]

@@ -1,11 +1,97 @@
-.jumbotron{
+/*** Global Styles ***/
+body{
+	background:url('/img/paper.jpg') repeat 0 0;
+}
+section{
+	overflow:hidden;
+}
+section article{
+	float:left;
+}
+section article ul{
+	width:90%;
+	padding-left:18px;
+}
+
+/*** Intro Section ***/
+section.jumbotron{
 	position:relative;
 	padding:20px 20px 20px 250px;
+	margin-top: 30px;
+	border:1px solid #ddd;
 }
-.jumbotron .me{
+section.jumbotron .me{
 	position:absolute;
 	left:50px;
 	top:50%;
 	margin-top:-75px;
 	border:8px solid #ddd;
+}
+section.jumbotron .btn{
+	margin-top:15px;
+}
+
+/*** Contact Section ***/
+section#contact{
+	display:none;
+}
+section#contact article{
+	width:25%;
+}
+section#contact article i.icon-large{
+	width:22px;
+	display:block;
+	float:left;
+	text-decoration:none;
+}
+
+/*** Weapons of Choice Section ***/
+section#weapons article{
+	width:25%;
+}
+section#weapons .progress{
+	width:90%;
+	background:none;
+	box-shadow: none;
+}
+section#weapons .progress > div{
+	text-align: left;
+	padding:2px 0 0 10px;
+	border-radius:5px;
+	box-shadow: inset 0px 3px 8px rgba(255, 255, 255, 0.09);
+	background-color: #999;
+}
+/* Expertise Levels */
+.beginner{
+	width:30%;
+}
+.beginner-intermediate{
+	width:55%;
+}
+.intermediate{
+	width:70%;
+}
+.intermediate-expert{
+	width:75%;
+}
+.expert{
+	width:100%;
+}
+
+/*** Experience Section ***/
+section#experience article{
+	width:50%;
+}
+section#experience article .label{
+	font-size:0.5em;
+}
+
+/*** Education Section ***/
+section#education article{
+	width:50%;
+}
+
+/*** Other Section ***/
+section#other article{
+	width:50%;
 }

@@ -4,43 +4,59 @@
 		"weapons" : [
 			{
 				"title" : "HTML5",
-				"years" : "3",
-				"level" : "Expert"
+				"years" : 3,
+				"level" : "Expert",
+				"levelNum" : 5,
+				"class" : "expert"
 			},
 			{
 				"title" : "CSS3",
-				"years" : "3",
-				"level" : "Intermediate/Expert"
+				"years" : 3,
+				"level" : "Intermediate/Expert",
+				"levelNum" : 4,
+				"class" : "intermediate-expert"
 			},
 			{
 				"title" : "jQuery",
-				"years" : "7",
-				"level" : "Expert"
+				"years" : 7,
+				"level" : "Expert",
+				"levelNum" : 5,
+				"class" : "expert"
 			},
 			{
 				"title" : "jQuery UI",
-				"years" : "4",
-				"level" : "Intermediate/Expert"
+				"years" : 4,
+				"level" : "Intermediate/Expert",
+				"levelNum" : 4,
+				"class" : "intermediate-expert"
 			},
 			{
 				"title" : "Angular.js",
-				"years" : "1",
-				"level" : "Intermediate"
+				"years" : 1,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "SASS",
-				"years" : "1",
-				"level" : "Intermediate/Expert"
+				"years" : 1,
+				"level" : "Intermediate/Expert",
+				"levelNum" : 4,
+				"class" : "intermediate-expert"
 			},
 			{
 				"title" : "Twitter Bootstrap",
-				"years" : "1",
-				"level" : "Intermediate"
+				"years" : 1,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "Modernizr",
-				"years" : "5",
-				"level" : "Intermediate/Expert"
+				"years" : 5,
+				"level" : "Intermediate/Expert",
+				"levelNum" : 4,
+				"class" : "intermediate-expert"
 			}
 
 		] 
@@ -50,18 +66,31 @@
 		"weapons" : [
 			{
 				"title" : "PHP",
-				"years" : "7",
-				"level" : "Intermediate"
+				"years" : 7,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "Ruby on Rails",
-				"years" : "5",
-				"level" : "Intermediate"
+				"years" : 5,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "Node.js",
-				"years" : "1",
-				"level" : "Beginner/Intermediate"
+				"years" : 1,
+				"level" : "Beginner/Intermediate",
+				"levelNum" : 2,
+				"class" : "beginner-intermediate"
+			},
+			{
+				"title" : "ASP.net C#",
+				"years" : 1,
+				"level" : "Beginner",
+				"levelNum" : 1,
+				"class" : "beginner"
 			}
 		]
 	},
@@ -70,18 +99,24 @@
 		"weapons" : [
 			{
 				"title" : "Git",
-				"years" : "1",
-				"level" : "Intermediate"
+				"years" : 1,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "SVN",
-				"years" : "3",
-				"level" : "Intermediate"
+				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "Perforce",
-				"years" : "2",
-				"level" : "Intermediate"
+				"years" : 2,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			}
 		]
 	},
@@ -90,13 +125,24 @@
 		"weapons" : [
 			{
 				"title" : "Photoshop",
-				"years" : "10",
-				"level" : "Intermediate"
+				"years" : 10,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			},
 			{
 				"title" : "Illustrator",
-				"years" : "7",
-				"level" : "Intermediate"
+				"years" : 7,
+				"level" : "Beginner/Intermediate",
+				"levelNum" : 2,
+				"class" : "beginner-intermediate"
+			},
+			{
+				"title" : "Flash",
+				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			}
 		]
 	},
@@ -105,18 +151,24 @@
 		"weapons" : [
 			{
 				"title" : "Mac OSX",
-				"years" : "5",
-				"level" : "Expert"
+				"years" : 5,
+				"level" : "Expert",
+				"levelNum" : 5,
+				"class" : "expert"
 			},
 			{
 				"title" : "Windows",
-				"years" : "15",
-				"level" : "Expert (sadly)"
+				"years" : 15,
+				"level" : "Expert (sadly)",
+				"levelNum" : 5,
+				"class" : "expert"
 			},
 			{
 				"title" : "Linux (Red Hat, Ubuntu)",
-				"years" : "3",
-				"level" : "Intermediate"
+				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
 			}
 		]
 	},
@@ -126,7 +178,9 @@
 			{
 				"title" : "Objective-C",
 				"years" : "1",
-				"level" : "Beginner"
+				"level" : "Beginner",
+				"levelNum" : 1,
+				"class" : "beginner"
 			}
 		]
 	}

@@ -15,6 +15,10 @@ function ResumeController($scope, $http){
 		$scope.contact = data[0];
 	});
 	
+	$http.get('data/social.json').success(function(data){
+		$scope.social = data;
+	})
+	
 	$http.get('data/education.json').success(function(data){
 		$scope.education = data;
 	});
