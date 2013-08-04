@@ -57,6 +57,13 @@
 				"level" : "Intermediate/Expert",
 				"levelNum" : 4,
 				"class" : "intermediate-expert"
+			},
+			{
+				"title" : "Jade",
+				"years" : 1,
+				"level" : "Beginner",
+				"levelNum" : 1,
+				"class" : "beginner"
 			}
 
 		] 
@@ -95,32 +102,6 @@
 		]
 	},
 	{
-		"category" : "Source Control",
-		"weapons" : [
-			{
-				"title" : "Git",
-				"years" : 1,
-				"level" : "Intermediate",
-				"levelNum" : 3,
-				"class" : "intermediate"
-			},
-			{
-				"title" : "SVN",
-				"years" : 3,
-				"level" : "Intermediate",
-				"levelNum" : 3,
-				"class" : "intermediate"
-			},
-			{
-				"title" : "Perforce",
-				"years" : 2,
-				"level" : "Intermediate",
-				"levelNum" : 3,
-				"class" : "intermediate"
-			}
-		]
-	},
-	{
 		"category" : "Design",
 		"weapons" : [
 			{
@@ -140,6 +121,13 @@
 			{
 				"title" : "Flash",
 				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
+			},
+			{
+				"title" : "InDesign",
+				"years" : 2,
 				"level" : "Intermediate",
 				"levelNum" : 3,
 				"class" : "intermediate"
@@ -164,8 +152,34 @@
 				"class" : "expert"
 			},
 			{
-				"title" : "Linux (Red Hat, Ubuntu)",
+				"title" : "Linux",
 				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
+			}
+		]
+	},
+	{
+		"category" : "Source Control",
+		"weapons" : [
+			{
+				"title" : "Git",
+				"years" : 1,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
+			},
+			{
+				"title" : "SVN",
+				"years" : 3,
+				"level" : "Intermediate",
+				"levelNum" : 3,
+				"class" : "intermediate"
+			},
+			{
+				"title" : "Perforce",
+				"years" : 2,
 				"level" : "Intermediate",
 				"levelNum" : 3,
 				"class" : "intermediate"

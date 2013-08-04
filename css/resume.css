@@ -1,4 +1,13 @@
 /*** Global Styles ***/
+/*
+html { 
+  background: url('/img/bg-wood.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
 body{
 	background:url('/img/paper.jpg') repeat 0 0;
 }
@@ -11,6 +20,9 @@ section article{
 section article ul{
 	width:90%;
 	padding-left:18px;
+}
+section .panel-heading{
+	font-size:1.2em;
 }
 
 /*** Intro Section ***/
@@ -47,32 +59,58 @@ section#contact article i.icon-large{
 
 /*** Weapons of Choice Section ***/
 section#weapons article{
-	width:25%;
+	width:33%;
+}
+section#weapons article li{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+section#weapons .skill-name{
+	width:40%;
+	float:left;
 }
 section#weapons .progress{
-	width:90%;
-	background:none;
-	box-shadow: none;
+	float: left;
+	margin-bottom: 0;
+	width:60%;
+	position:relative;
 }
-section#weapons .progress > div{
-	text-align: left;
-	padding:2px 0 0 10px;
-	border-radius:5px;
-	box-shadow: inset 0px 3px 8px rgba(255, 255, 255, 0.09);
-	background-color: #999;
+section#weapons .progress-bar{
+	background-color: #ccc;
 }
+section#weapons .highlight{
+	background-color:#428bca;
+}
+section#weapons .skill-detail{
+	font-size:0.8em;
+	height:100%;
+	line-height:1.8em;
+	vertical-align: middle;
+	position:absolute;
+	padding:0 5px;
+	width:100%;
+	color:#fff;
+	background-color:#428bca;
+	z-index:2;
+	cursor:pointer;
+	border-radius: 4px;
+}
+section#weapons .skill-detail .year{
+	float:right;
+}
+
 /* Expertise Levels */
 .beginner{
-	width:30%;
+	width:20%;
 }
 .beginner-intermediate{
-	width:55%;
+	width:40%;
 }
 .intermediate{
-	width:70%;
+	width:60%;
 }
 .intermediate-expert{
-	width:75%;
+	width:80%;
 }
 .expert{
 	width:100%;
@@ -85,6 +123,9 @@ section#experience article{
 section#experience article .label{
 	font-size:0.5em;
 }
+section#experience article .company{
+	font-size:0.8em;
+}
 
 /*** Education Section ***/
 section#education article{
@@ -94,4 +135,13 @@ section#education article{
 /*** Other Section ***/
 section#other article{
 	width:50%;
+}
+section#other article p{
+	width:90%;
+}
+
+/*** Code View ***/
+div#code-view div.modal-dialog{
+	width:90%;
+	overflow: scroll;
 }

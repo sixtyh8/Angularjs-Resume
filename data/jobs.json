@@ -4,27 +4,28 @@
 		"company" : "Electronic Arts",
 		"time" : "2011 - Now",
 		"tasks" : [
-			{ "snippet" : "Web pages Integration using xHTML and HTML5 with CSS2 and CSS3."},
+			{ "snippet" : "Web pages integration using xHTML and HTML5 with CSS2, CSS3 and SASS."},
 			{ "snippet" : "Source code versionning with Perforce."},
-			{ "snippet" : "Interfaces development with jQuery, jQuery UI, using Modernizr for progressive enhancement."},
-			{ "snippet" : "Document code and processes on a wiki."},
+			{ "snippet" : "UI development with jQuery, jQuery UI, using Modernizr for progressive enhancement."},
+			{ "snippet" : "Code and processes documentation on a wiki."},
+			{ "snippet" : "Agile development."},
 			{ "snippet" : "Bug tracking in Jira."}
 		]
 	},
 	{
 		"jobTitle" : "Front-End Developer",
-		"company" : "Canoe",
+		"company" : "Canoe (Jobboom.com)",
 		"time" : "2007 - 2011",
 		"tasks" : [
-			{ "snippet" : "Web pages Integration using xHTML and HTML5 with CSS2 and CSS3."},
+			{ "snippet" : "Web pages integration using xHTML and HTML5 with CSS2 and CSS3."},
 			{ "snippet" : "PHP programming in Zend Framework."},
 			{ "snippet" : "Source code versionning with SVN."},
-			{ "snippet" : "Interfaces development with jQuery, jQuery UI and using Modernizr for progressive enhancement."},
-			{ "snippet" : "Javascript unit tests with qUnit."},
-			{ "snippet" : "Document code and processes on a wiki."},
+			{ "snippet" : "UI development with jQuery, jQuery UI and using Modernizr for progressive enhancement."},
+			{ "snippet" : "Unit testing javascript with qUnit."},
+			{ "snippet" : "Code and processes documentation on a wiki."},
 			{ "snippet" : "Agile development."},
 			{ "snippet" : "HTML template creation for emails."},
-			{ "snippet" : "Making sure web pages are accessible with unit tests in phpUnit."},
+			{ "snippet" : "Accessibility testing with unit tests in phpUnit."},
 			{ "snippet" : "Bug tracking with Mantis."}
 		]
 	},
@@ -33,25 +34,22 @@
 		"company" : "Yellow Pages Group",
 		"time" : "2005 - 2007",
 		"tasks" : [
-			{"snippet" : "Update the corporate website and the urban sites. (xHTML, CSS, Javascript)"},
-			{"snippet" : "Integrate editorial content."},
+			{"snippet" : "Corporate website and the urban sites updating. (xHTML, CSS, Javascript)"},
 			{"snippet" : "Image retouching and design for the sites."},
 			{"snippet" : "Special projects: Acessibility, CSS optimisation, new technologies (AJAX, XSLT, JSON)."},
-			{"snippet" : "Publicity material creation for different media (web, mobile, email)"},
+			{"snippet" : "Marketing material creation for different mediums (web, mobile, email)"},
 			{"snippet" : "Newsletter templating and integration."}
 		]
 	},
 	{
-		"jobTitle" : "Web Integrator 2",
-		"company" : "Yellow Pages Group",
-		"time" : "2005 - 2007",
+		"jobTitle" : "Webmaster / Designer / Network Administrator",
+		"company" : "Megastar Electroniques",
+		"time" : "2000 - 2005",
 		"tasks" : [
-			{"snippet" : "Update the corporate website and the urban sites. (xHTML, CSS, Javascript)"},
-			{"snippet" : "Integrate editorial content."},
-			{"snippet" : "Image retouching and design for the sites."},
-			{"snippet" : "Special projects: Acessibility, CSS optimisation, new technologies (AJAX, XSLT, JSON)."},
-			{"snippet" : "Publicity material creation for different media (web, mobile, email)"},
-			{"snippet" : "Newsletter templating and integration."}
+			{"snippet" : "Corporate website updating (xHTML, CSS, Javascript, Flash)."},
+			{"snippet" : "Online and print catalogs creation for the different products."},
+			{"snippet" : "Company hardware maintenance (file server, web server, Exchange mail server, printers, network, computers, etc..)."},
+			{"snippet" : "Marketing material creation for different mediums (web, mobile, email, flyers, catalogues, magazines, etc..)."}
 		]
 	}
 ]

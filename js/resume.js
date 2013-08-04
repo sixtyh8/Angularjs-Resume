@@ -1,6 +1,6 @@
 $(function(){
 
-	$('div.hero-unit img.img-circle').hover(function(){
+	$('section.jumbotron img.me').hover(function(){
 		var newSrc = $(this).data('alternate-image'),
 			oldSrc = $(this).attr('src');
 		$(this).attr('src', newSrc).data('alternate-image', oldSrc);
@@ -11,14 +11,14 @@ $(function(){
 		$('section#contact').slideToggle();
 	});
 	
-	$('a.more-trigger').on('click', function(e){
-		e.preventDefault();
-		$(this).parents('div.more-row').children('div.more-content').slideToggle('fast', function(){
-			var el = $(this).next('div.more-link-container').children('a'),
-				text = el.text();
-			
-			el.text(text == 'More' ? 'Less' : 'More');
-			
-		});
+	$('section#weapons').on('mouseenter mouseleave', '.progress', function(event){
+		if(event.type == 'mouseenter'){
+			var type = $(this).children('.progress-bar').attr('class');
+			var level = type.split(' ')[1];
+			$('.'+level).next('.skill-detail').show();
+		} else {
+			$('.skill-detail').hide();
+		}
 	});
+	
 });

@@ -1,23 +1,38 @@
 [
 		
 	{
-		"title" : "Know",
+		"title" : "Books",
 		"items" : [
-			{"name" : "Ruby on Rails, PHP and Node.js backend programming."},
-			{"name" : "Knowledge of multiple OSes (Mac, Windows and Linux)."},
-			{"name" : "AngularJS, jQuery, jQueryUI, Twitter Bootstrap."},
-			{"name" : "Comfortable working in command line (SSH, Terminal, etc...)."},
-			{"name" : "Good knowledge of Adobe software suite (Photoshop, Illustrator, Premiere, Flash, etc...)."}
+			{
+				"name" : "Rework",
+				"snippet" : "Loved the format and subject matter. Changed the way I view many established rules in the business."
+			},
+			{
+				"name" : "A Book Apart series",
+				"snippet" : "Read most of them by now and liked that they were specific and to the point. Full of good examples. Written by industry greats."
+			}
 		]
+		
 	},
 	{
-		"title" : "Like",
+		"title" : "Things I Like",
 		"items" : [
-			{"name" : "Gaming"},
-			{"name" : "Drumming"},
-			{"name" : "Reading"},
-			{"name" : "Learning"},
-			{"name" : "Cooking"}
+			{
+				"name" : "Gaming",
+				"snippet" : "I play games on console, and Team Fortress 2 on my mac."
+			},{
+				"name" : "Reading",
+				"snippet" : "I don't just read technical books, I also like to read novels."
+			},{
+				"name" : "Music",
+				"snippet" : "I listen to almost any genre of music. Used to play drums, would like to play again in the future."
+			},{
+				"name" : "Cooking",
+				"snippet" : "I like to try new things in the kitchen (or on the grill). I don;t always succeed, but practice makes perfect."
+			},{
+				"name" : "",
+				"snippet" : ""
+			}
 		]
 	}
 ]

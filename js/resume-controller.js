@@ -1,11 +1,7 @@
-angular.module('resumeApp', []).
-  filter('sliceArray', function() {
-    return function(arr, start, end) {
-    	return arr.slice(start, end); 
-		}
-  });
+resume = angular.module('resumeApp', []);
 
-function ResumeController($scope, $http){
+// Controller
+resume.controller('ResumeController', function($scope, $http){
 	
 	$http.get('data/jobs.json').success(function(data) {
     	$scope.jobs = data;
@@ -31,4 +27,11 @@ function ResumeController($scope, $http){
 		$scope.weapons = data;
 	});
 
-};
+});
+
+// Filter
+resume.filter('sliceArray', function() {
+    return function(arr, start, end) {
+    	return arr.slice(start, end); 
+	}
+});
