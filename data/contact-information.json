@@ -2,6 +2,7 @@
 	 {
 		"firstName" : "Guillaume",
 		"lastName" : "Charbonneau",
+		 "myimage":"img/me.jpg",
 		"email" : "charbonneauster@gmail.com",
 		"address" : {
 			"street" : "1400 de Rougemont",
