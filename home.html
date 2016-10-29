@@ -12,12 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
         <link rel="stylesheet" href="css/resume.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="js/resume-controller.js"></script>
-
     </head>
     <body ng-controller="ResumeController">
     	<div class="container">
@@ -27,7 +26,7 @@
         
 		<section id="introduction" class="jumbotron">
 			<h1>Hello.</h1>
-			<img src="img/me.jpg" data-alternate-image="img/me2.jpg" height="150" width="150" class="me img-circle" alt="Me" />
+			<img ng-src="{{contact.myimage}}" data-alternate-image="img/me2.jpg" height="150" width="150" class="me img-circle" alt="Me" />
 	        <p>Welcome to {{ contact.firstName + " " + contact.lastName }}'s resume. That's me! </p>
 	        <p>I've been doing web stuff for the past 13 years and I'm constantly looking to learn and improve. If you're interested in what we could accomplish by working together, please don't hesitate to <a href="#" class="btn btn-primary" id="contact-trigger"><i class="icon-user icon-white"></i> Contact me</a></p>
 		</section>
@@ -56,9 +55,9 @@
 			</article>
 			<article>
 				<h3>Social</h3>
-				<ul class="list-unstyled">
+				<ul class="list-unstyled list-inline">
 					<li ng-repeat="s in social">
-						<a ng-href="{{ s.url }}"><i class="{{ s.class }} icon-large"></i> {{ s.service }}</a>
+						<a ng-href="{{ s.url }}" ng-attr-title="{{ s.service}}"><i class="{{ s.class }} fa-lg"></i></a>
 					</li>
 				</ul>
 			</article>
